@@ -10,7 +10,6 @@ class MonsterCard(Card):
     if(self.hp <= 0):
       self.alive = False
       print(f"{self.Name()} has died")
-    pass
 
   def loseHP(self, dmg):
     self.hp -=dmg
