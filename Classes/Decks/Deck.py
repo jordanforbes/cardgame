@@ -36,6 +36,17 @@ class Deck:
     for card in self.cards:
       print(f"{card.name}")
 
+  def drawCertainCard(self):
+    pass
+
+  def removeCartainCard(self):
+    pass
+
+  def sendToGrave(self):
+    pass
+
+  def playCard(self):
+    pass
 
 # pCards=["Ace of Spades","King of Clubs", "Queen of Hearts","Jack of Diamonds", "10 of Spades"]
 
