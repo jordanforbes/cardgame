@@ -39,11 +39,8 @@ c4 = Card("Jack", "a type here", "an effect")
 c5 = Card("10", "a type here", "an effect")
 pCards=[c1, c2, c3, c4, c5]
 testDeck = Deck()
-testDeck.addCard(pCards[0],'top')
-testDeck.addCard(pCards[1], 'top')
-testDeck.addCard(pCards[2],"top")
-testDeck.addCard(pCards[3],"top")
-testDeck.addCard(pCards[4],"top")
+testDeck.addAllCards(pCards,"same")
+print(testDeck.showCards())
 
 
 testHand = HandDeck(testDeck)

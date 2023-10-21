@@ -28,13 +28,22 @@ class Deck:
 
   # shuffles deck
   def shuffle(self):
-    print("shuffling...")
     random.shuffle(self.cards)
 
   # Show cards
   def showCards(self):
     for card in self.cards:
       print(f"{card.name}")
+
+  def addAllCards(self, arr, order):
+    for card in arr:
+      if order =="same":
+        self.addCard(card, "bottom")
+      if order =="reverse":
+        self.addCard(card, "top")
+      if order =="random":
+        self.addCard(card, "top")
+        self.shuffle()
 
   def drawCertainCard(self):
     pass
